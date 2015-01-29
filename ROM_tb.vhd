@@ -39,50 +39,50 @@ BEGIN
       wait for 100 ns;	
 		
 		addr<= "0000";
-      wait for clk_period*10;
+      wait for 10ns;
 		
 		addr <="0001";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="0010";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="0011";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="0100";
-		wait for clk_period*10;
+		wait for 10ns;
 
 		addr <="0101";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="0110";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="0111";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1000";
-		wait for clk_period*10;
+		wait for 10ns;
 		addr <="1001";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1010";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1011";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1100";
-		wait for clk_period*10;
+		wait for 10ns;
 		addr <="1101";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1110";
-		wait for clk_period*10;
+		wait for 10ns;
 		
 		addr <="1111";
-		wait for clk_period*10;
+		wait for 10ns;
 		
       wait;
    end process;
