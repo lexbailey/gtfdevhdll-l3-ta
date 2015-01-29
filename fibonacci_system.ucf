@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = L15;
+NET "count" LOC = F5;
+NET "rst" LOC = T15;
+NET "fib_out[0]" LOC = U18;
+NET "fib_out[1]" LOC = M14;
+NET "fib_out[2]" LOC = N14;
+NET "fib_out[3]" LOC = L14;
+NET "fib_out[4]" LOC = M13;
+NET "fib_out[5]" LOC = D4;
+NET "fib_out[6]" LOC = P16;
+NET "fib_out[7]" LOC = N12;
