@@ -59,10 +59,15 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 		
+		--The test loop
 		for i in test_vector'range loop
+			--set the address to to test (convert i to unsigned)
 			addr <= to_unsigned(i,4);
-			wait for 20 ns; -- multiple of period when sequential
+			--wait after setting inputs
+			wait for 20 ns;
+			--check this output
 			assert (fib_out = test_vector(i))
+			--report the test input, expected output and actual output if this test failed
 			report "Test failed with input addr = " & integer'image(i) &
 				" expected " & integer'image(to_integer(unsigned(test_vector(i)))) &
 				" but got " & integer'image(to_integer(unsigned(fib_out)))
