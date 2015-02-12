@@ -56,23 +56,25 @@ BEGIN
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
+		--Reset the system (wait for 2 clock periods because of debouncer)
 		rst <= '1';
 		count <= '0';
       wait for clk_period*2;
-
       rst <= '0';
 		wait for clk_period*2;
 		
+		--Advance by one count
 		count <= '1';
 		wait for clk_period*3;
 		count <= '0';
 		wait for clk_period*3;
 		
+		--test second reset
 		rst <= '1';
 		wait for clk_period*2;
-
 		rst <= '0';
 		
+		--keep counting forever to loop through the numbers
 		COUNT_LOOP : loop
 			count <= '1';
 			wait for clk_period*3;
